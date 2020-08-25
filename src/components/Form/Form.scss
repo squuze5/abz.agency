@@ -1,0 +1,71 @@
+.form__content {
+  form {
+    margin: 10px 27% 0;
+    .form__item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+
+      label {
+        font-size: 16px;
+        line-height: 28px;
+        color: #212529;
+        font-weight: 400;
+        margin-bottom: 3px;
+        font-family: 'PT Sans', sans-serif;
+      }
+
+      input {
+        padding: 6px 10px;
+        border-radius: 5px;
+        border: 1px solid #ececec;
+        font-size: 16px;
+        line-height: 28px;
+        color: #b2b9c0;
+        font-weight: 400;
+        font-family: 'PT Sans', sans-serif;
+      }
+
+      span {
+        font-size: 12px;
+        color: #212529;
+        font-weight: 400;
+        margin-top: 5px;
+      }
+    }
+
+    .form__item-radio {
+      display: flex;
+      flex-direction: column;
+
+      .item__radio {
+        margin-bottom: 10px;
+
+        input {
+          margin-right: 5px;
+          font-family: 'PT Sans', sans-serif;
+        }
+
+        label {
+          font-size: 16px;
+          line-height: 28px;
+          color: #212529;
+          font-weight: 400;
+          font-family: 'PT Sans', sans-serif;
+        }
+      }
+    }
+
+    .form__item-file {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-size: 16px;
+        line-height: 28px;
+        color: #212529;
+        font-weight: 400;
+      }
+    }
+  }
+}
