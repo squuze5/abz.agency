@@ -1,0 +1,41 @@
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+
+  .about__content-img {
+    padding: 0 30px;
+
+    img {
+      height: 90%;
+    }
+  }
+
+  .about__content-text {
+    padding: 0 30px;
+    h4 {
+      font-size: 24px;
+      line-height: 30px;
+      color: #212529;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      color: #4c4b4b;
+      font-weight: 400;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    a {
+      font-size: 16px;
+      line-height: 60px;
+      color: #ef5b4c;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}
