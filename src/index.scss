@@ -41,8 +41,6 @@
 }
 
 .submit-button {
-  text-align: center;
-
   button {
     font-size: 16px;
     color: #fefefe;
@@ -59,4 +57,8 @@
   button:hover {
     background-color: #d24335;
   }
+}
+
+.button-center {
+  text-align: center;
 }

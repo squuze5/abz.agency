@@ -65,7 +65,7 @@ const Form = () => {
                             </label>
                         </div>
 
-                        <div className="submit-button">
+                        <div className="submit-button button-center">
                             <button>Sing up now</button>
                         </div>
                     </form>

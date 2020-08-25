@@ -31,7 +31,7 @@ const Users = () => {
                         <CardUser />
                     </div>
                     
-                    <div className="submit-button">
+                    <div className="submit-button button-center">
                         <button>Show more</button>
                     </div>
                 </div>
