@@ -4,7 +4,7 @@ import './Form.scss';
 
 const Form = () => {
     return (
-        <div className="form section">
+        <section className="form section">
             <div className="container">
                 <div className="section__header">
                     <div className="section__header-title">
@@ -71,7 +71,7 @@ const Form = () => {
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

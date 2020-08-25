@@ -1,0 +1,23 @@
+.users {
+    background-color: #f9f9f3;
+}
+
+.users__content {
+    .users__content-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+
+        .user__card {
+            width: 33%;
+            margin-bottom: 50px;
+
+            .user__card-info {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
