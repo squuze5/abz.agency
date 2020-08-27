@@ -2,21 +2,23 @@ import React from 'react';
 
 import DefaultPhoto from '../../assets/img/photo-cover.png';
 
-const CardUser = () => {
+const CardUser = (props) => {
+    const photoUser = props.usersData.photo;
+
     return (
         <div className="user__card">
             <div className="user__card-img">
-                <img src={DefaultPhoto} alt="User avatart"/>
+                <img src={photoUser ? photoUser : DefaultPhoto} alt="User avatart"/>
             </div>
 
             <div className="user__card-name">
-                <h5>Noah</h5>
+                <h5>{props.usersData.name}</h5>
             </div>
 
             <div className="user__card-info">
-                <span>QA</span>
-                <span>test@gmail.com</span>
-                <span>+380 99 063 03 24</span>
+                <span>{props.usersData.position}</span>
+                <span>{props.usersData.email}</span>
+                <span>{props.usersData.phone}</span>
             </div>
         </div>
     )

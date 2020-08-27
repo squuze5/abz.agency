@@ -4,6 +4,20 @@ import './Users.scss';
 import CardUser from './CardUser';
 
 const Users = () => {
+    const baseUrl = 'https://frontend-test-assignment-api.abz.agency/api/v1';
+    const [users, setUsers] = React.useState([]);
+    const [page, setPage] = React.useState(1);
+
+    React.useEffect(() => {
+        fetch(`${baseUrl}/users?page=${page}&count=6`)
+          .then(res => res.json())
+          .then(json => {
+            setUsers(json.users);        
+          });
+      }, [page]);
+
+    console.log(users);
+
     return (
         <section className="users section">
             <div className="container">
@@ -22,17 +36,16 @@ const Users = () => {
                 <div className="users__content">
 
                     <div className="users__content-list">
-                        <CardUser />
-                        <CardUser />
-                        <CardUser />
-
-                        <CardUser />
-                        <CardUser />
-                        <CardUser />
+                        {users.length !== 0 ? users.map(user => (
+                            <CardUser 
+                                usersData={user}
+                                key={user.id} 
+                            />
+                        )) : <div>Loading...</div>}
                     </div>
                     
                     <div className="submit-button button-center">
-                        <button>Show more</button>
+                        <button onClick={() => setPage(page + 1)}>Show more</button>
                     </div>
                 </div>
             </div>
